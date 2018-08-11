@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/amany9000/eth-inbox/issues"
   },
-  "homepage": "https://github.com/amany9000/eth-inbox#readme"
+  "homepage": "https://github.com/amany9000/eth-inbox#readme",
+  "dependencies": {
+    "solc": "^0.4.24"
+  }
 }
