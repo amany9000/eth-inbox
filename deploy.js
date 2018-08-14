@@ -1,4 +1,5 @@
 
+// This is a file to deploy the compiled bytecode and interface at ./compile.sol
 const hdWalletProvider = require("truffle-hdwallet-provider");
 const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
@@ -19,6 +20,6 @@ const deploy = async () => {
 		.deploy({data: "0x" + bytecode, arguments: ["Hey"]})
 		.send({gas: "1000000", from: accounts[0]});
 
-	console.log("Bazinga!!!, Deployed at "result.options.address);	
+	console.log("Bazinga!!!, Deployed at ",result.options.address);	
 }  
-deploy();
+//deploy();
