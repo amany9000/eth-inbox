@@ -1,4 +1,5 @@
 
+// This function returns a promis containing the contract instance of inbox
 const Web3 = require("web3");
 const hdWalletProvider = require("truffle-hdwallet-provider");
 const { interface, bytecode } = require("./compile");
