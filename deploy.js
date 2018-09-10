@@ -5,8 +5,8 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
 const provider = new hdWalletProvider(
-	"dust tired lawn post else ladder forest memory quality click obey hurt",
-	"https://rinkeby.infura.io/v3/a28609fdb48f468e9ca4607b4ff95140"
+	"[Your account Mnemonic from metamask]",
+	"https://rinkeby.infura.io/v3/a28609fdb48f468e9ca4607b4ff95140"  // This address will be generated through infura 
 );
 
 const web3 = new Web3(provider);
@@ -22,4 +22,4 @@ const deploy = async () => {
 
 	console.log("Bazinga!!!, Deployed at ",result.options.address);	
 }  
-//deploy();
+deploy();
